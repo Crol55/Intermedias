@@ -11,9 +11,7 @@ pipeline{
         stage ('Construir nuesta app'){
             steps {
                 echo "Parte mas importante"
-                echo "cambio "
-                echo "Cambio 2"
-                // Sh <instruccion>
+                echo "Construccion desde Intermedias"
             }
         }
     }
