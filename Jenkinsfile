@@ -1,12 +1,11 @@
 
 pipeline{
-
-    agents any 
+    agent any 
     stages {
 
         stage ('Descargar dependencias'){
             steps{
-                // 
+                echo "dependencies" 
             }
         }
         stage ('Construir nuesta app'){
