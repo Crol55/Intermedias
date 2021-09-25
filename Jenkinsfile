@@ -8,9 +8,13 @@ pipeline{
                 echo "dependencies" 
             }
         }
-        stage ('Construir nuesta app'){
+        stage ('Produccion-Ansible'){
+            agent{
+                label 'Ansible-aws-produccion'
+            }
             steps {
-                ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'Ansible2', inventory: 'dev.inv', playbook: 'ansible-playbook.yml'
+                echo "hola mundo desde ansible"
+                sh "whoami"
             }
         }
     }
