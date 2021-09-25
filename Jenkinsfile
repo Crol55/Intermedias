@@ -12,6 +12,7 @@ pipeline{
             steps {
                 echo "Parte mas importante"
                 echo "Construccion desde Intermedias"
+                echo "deberia funcionar en jenkins"
             }
         }
     }
