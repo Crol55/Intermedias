@@ -10,9 +10,7 @@ pipeline{
         }
         stage ('Construir nuesta app'){
             steps {
-                echo "Parte mas importante"
-                echo "Construccion desde Intermedias"
-                echo "deberia funcionar en jenkins"
+                ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'Ansible2', inventory: 'dev.inv', playbook: 'ansible-playbook.yml'
             }
         }
     }
