@@ -1,0 +1,4 @@
+- hosts: webserver
+  tasks: 
+    - name: Testeando desde ansible
+      shell: echo helloworld
