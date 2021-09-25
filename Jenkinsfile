@@ -15,6 +15,7 @@ pipeline{
             steps {
                 echo "hola mundo desde ansible"
                 sh "whoami"
+                sh "ansible localhost -m ping"
             }
         }
     }
